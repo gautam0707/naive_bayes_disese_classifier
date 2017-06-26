@@ -1,6 +1,5 @@
 # Disease Classifier
 Using a Naive Bayes Classifier gets possible diseases from symptoms
-In 12 lines of code
 
 ### Example Input:
 ```
@@ -27,13 +26,10 @@ http://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html
 ### Requsites
 ```
 sudo pip install naiveBayesClassifier
+(changed some code..)
 ```
-
-### Posible Bugs/Errors.
-None that im aware of
-
 
 ### Thanks to:
 https://github.com/muatik/naive-bayes-classifier
 
-# see the image shot for example input and output
+### see the screenshot for example input and output

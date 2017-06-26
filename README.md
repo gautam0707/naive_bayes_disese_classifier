@@ -8,7 +8,16 @@ python GuessDisease.py "agitation,exhaustion"
 ```
 ### Example Output:
 ```
-('influenza', 0.0)
+('bipolar disorder', 1.2303930712136743e-07)
+('delusion', 5.93049460324991e-14)
+('hypothyroidism', 2.965247301624956e-14)
+('paranoia', 2.965247301624956e-14)
+('malignant neoplasm of lung carcinoma of lung', 2.965247301624956e-14)
+('schizophrenia', 2.965247301624956e-14)
+('psychotic disorder', 2.965247301624956e-14)
+('confusion', 2.965247301624956e-14)
+('anxiety state', 2.965247301624956e-14)
+('dependence', 2.965247301624956e-14)
 ```
 
 ### DATA USED 

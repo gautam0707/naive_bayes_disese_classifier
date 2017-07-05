@@ -2,7 +2,7 @@ from __future__ import division
 import operator
 from functools import reduce
 
-from ExceptionNotSeen import NotSeen
+from naiveBayesClassifier.ExceptionNotSeen import NotSeen
 
 class Classifier(object):
     """docstring for Classifier"""

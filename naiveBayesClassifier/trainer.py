@@ -18,4 +18,4 @@ class Trainer(object):
             self.data.increaseToken(token, className)
     
     def setPriors(self, className, count):
-	self.data.setClassCount(className, count)
+        self.data.setClassCount(className, count)

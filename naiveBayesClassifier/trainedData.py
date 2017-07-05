@@ -1,4 +1,4 @@
-from ExceptionNotSeen import NotSeen
+from naiveBayesClassifier.ExceptionNotSeen import NotSeen
 
 class TrainedData(object):
     def __init__(self):
@@ -9,7 +9,7 @@ class TrainedData(object):
         self.docCountOfClasses[className] = self.docCountOfClasses.get(className, 0) + 1
     
     def setClassCount(self, className, count):
-	self.docCountOfClasses[className] = count
+        self.docCountOfClasses[className] = count
 
     def increaseToken(self, token, className, byAmount = 1):
         if not token in self.frequencies:

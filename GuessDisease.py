@@ -44,16 +44,29 @@ def get_unique_symptoms(other_possible_symtoms):
             temp = temp.union(j)
         for j in sets[i+1:]:
             temp = temp.union(j)        
-        unique_list_of_symptoms += list(sets[i].difference(temp))[:2]
+        unique = list(sets[i].difference(temp))
+        unique_list_of_symptoms.append(unique[:2])
+        unique_list_of_symptoms.append(unique[3:5])
+        unique_list_of_symptoms.append(unique[5:])
     return unique_list_of_symptoms
     
 def ask_user_for_more_details(unique_symptoms):
     if unique_symptoms:
         print("If you have any of these symptoms, enter as comma separated values")
-        for i in unique_symptoms:
+        for i in unique_symptoms[0]:
             print(i)
         user_input = input()
-        return user_input
+        print(user_input)
+        if user_input:
+            return user_input
+        else:
+            if unique_symptoms[1]:
+                print("If you have any of these symptoms, enter as comma separated values")
+                for i in unique_symptoms[1]:
+                    print(i)
+                user_input = input()
+                if user_input!='\n':
+                    return user_input
     return None
 
 
